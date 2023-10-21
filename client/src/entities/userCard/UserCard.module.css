@@ -38,7 +38,7 @@ cursor:auto;
   color: #432eab;
 }
 .card_heading{
-  width: 164px;
+  width: 40%;
   color: #262c40;
   font-size: 16px;
 }
@@ -63,4 +63,10 @@ max-width: 60%;
 .card_info{
   display: flex;
   flex-direction: column;
+}
+
+@media(max-width:710px ) {
+  .card{
+    min-height: auto;
+  }
 }

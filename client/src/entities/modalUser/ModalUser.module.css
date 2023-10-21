@@ -22,11 +22,14 @@
   max-width: 460px;
   background-color: #fff;
   border-radius: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .modal.active {
   opacity: 1;
   pointer-events:all;
+  overflow: hidden;
 }
 
 .modal_name{
