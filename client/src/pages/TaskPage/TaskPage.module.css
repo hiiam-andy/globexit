@@ -1,4 +1,6 @@
 .taskPage_section{
+  display: flex;
+  justify-content: center;
   padding: 15px 30px 50px;
 }
 .task_text{
