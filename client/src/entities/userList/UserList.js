@@ -12,17 +12,21 @@ export default function UserList() {
     <div className={styles.user_list__container}>
       <SearchUser />
       <div className={styles.user_list}>
-        {data.map((el) => (
-          <UserCard
-            key={el.name}
-            name={el.name}
-            phone={el.phone}
-            email={el.email}
-            hire_date={el.hire_date}
-            position_name={el.position_name}
-            department={el.department}
-          />
-        ))}
+        {data.length > 0 ? (
+          data.map((el) => (
+            <UserCard
+              key={el.name}
+              name={el.name}
+              phone={el.phone}
+              email={el.email}
+              hire_date={el.hire_date}
+              position_name={el.position_name}
+              department={el.department}
+            />
+          ))
+        ) : (
+          <div>Не найдено</div>
+        )}
       </div>
       <ModalUser />
     </div>
